@@ -101,3 +101,10 @@ curl -sSL https://install.python-poetry.org | python3 -
 ## Docker engine
 
 [Install Docs](https://docs.docker.com/engine/install)
+
+## Gnome Extensions
+
+- App menu is back
+- Dash to Dock
+- GNOME Fuzzy App Search
+- Pomodoro Timer
