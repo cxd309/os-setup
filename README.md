@@ -15,7 +15,19 @@
 ### Install
 
 ```bash
-apt update && apt install git github-desktop forticlient texlive-full texstudio flatpak gnome-software-plugin-flatpak nvidia-kernel-dkms nvidia-driver
+sudo apt update
+```
+
+```bash
+sudo apt install nvidia-kernel-dkms nvidia-driver
+```
+
+```bash
+sudo apt install texlive-full texstudio
+```
+
+```bash
+apt install git github-desktop forticlient  flatpak gnome-software-plugin-flatpak chromium
 ```
 
 [Check nvidia driver install](https://wiki.debian.org/NvidiaGraphicsDrivers#trixie-postinstall)
@@ -27,7 +39,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 ```
 
 ```bash
-flatpak install flathub org.chromium.Chromium org.mozilla.Thunderbird io.dbeaver.DBeaverCommunity com.getpostman.Postman
+flatpak install flathub com.google.Chrome org.mozilla.Thunderbird io.dbeaver.DBeaverCommunity com.getpostman.Postman
 ```
 
 ## VS Code
