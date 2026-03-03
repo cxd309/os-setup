@@ -6,37 +6,41 @@
 
 ## apt
 
-### Package Feeds
+### Nvidia drivers
 
-[GitHub Desktop](https://github.com/shiftkey/desktop)
-
-[FortiClient 7.2](https://www.fortinet.com/uk/support/product-downloads/linux)
-
-### Install
-
-```bash
-sudo apt update
-```
+Follow the pre installation instructions
+[Debian nVidia docs](https://wiki.debian.org/NvidiaGraphicsDrivers). This probably means going in and changing deb sources.
 
 ```bash
 sudo apt install nvidia-kernel-dkms nvidia-driver
 ```
 
+### TeX
+
 ```bash
 sudo apt install texlive-full texstudio
 ```
 
+### Other
+
+Get the following package feeds:
+
+- [GitHub Desktop](https://github.com/shiftkey/desktop)
+- [FortiClient 7.2](https://www.fortinet.com/uk/support/product-downloads/linux)
+
 ```bash
-apt install git github-desktop forticlient  flatpak gnome-software-plugin-flatpak chromium
+apt install git github-desktop forticlient  flatpak gnome-software-plugin-flatpak chromium curl
 ```
 
-[Check nvidia driver install](https://wiki.debian.org/NvidiaGraphicsDrivers#trixie-postinstall)
-
 ## flatpak
+
+Add the flathub repository.
 
 ```bash
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
+
+Install the packages we are after
 
 ```bash
 flatpak install flathub com.google.Chrome org.mozilla.Thunderbird io.dbeaver.DBeaverCommunity com.getpostman.Postman
@@ -69,7 +73,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 [ruff docs](https://docs.astral.sh/ruff/installation/) [ty docs](https://docs.astral.sh/ty/installation/)
 
 ```bash
-uv tool install ruff@latest ty@latest
+uv tool install ruff@latest && uv tool install ty@latest
 ```
 
 [Poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)
@@ -104,7 +108,18 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 ## Gnome Extensions
 
+Chromium browser extension and then get an extension manager in the software manager so you can change settings.
+
 - App menu is back
 - Dash to Dock
+  - Position Left
+  - Show on all monitors
+  - Icon size 32px
+  - Use default theme (remember to set system to dark mode)
 - GNOME Fuzzy App Search
 - Pomodoro Timer
+
+## Keyboard shortcuts
+
+- alt+tab -> switch windows
+- super+enter -> custom `gnome-terminal`
