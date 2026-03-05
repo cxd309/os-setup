@@ -89,6 +89,13 @@ curl -sSL https://install.python-poetry.org | python3 -
 ## Go Tools
 
 - **Go** — https://go.dev/dl/
+- add to `~/.bashrc`:
+
+```bash
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
+```
+
 - **air** — live reload for development
   ```bash
   go install github.com/air-verse/air@latest
